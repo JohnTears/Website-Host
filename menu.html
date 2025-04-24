@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Onesmus Restaurant | Authentic Ugandan Cuisine</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logos/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../food pro/css/style.css">
+    <link rel="stylesheet" href="../food pro/css/menu.css">
+    <link rel="stylesheet" href="../food pro/css/responsive.css">
+    <link rel="stylesheet" href="../food pro/css/animations.css">
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Explore our delicious menu featuring Rolex, Kikomando, Egg Rolls, and other authentic Ugandan street food at Onesmus Restaurant in Mbarara.">
+    <meta name="keywords" content="Onesmus Restaurant menu, Ugandan food prices, Rolex price Mbarara, Kikomando, local food menu">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img style="border-radius: 200px 200px ; width: 50px;" src="images/logos/logo.png" alt="Onesmus Restaurant Logo">
+                </a>
+                
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="booking.html">Book Table</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Hero Section -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/background/menu-bg.jpg'); height: 600px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Our Delicious Menu</h1>
+                <p class="hero-subtitle">Authentic Ugandan street food made with fresh, local ingredients</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Menu Navigation -->
+    <section class="menu-navigation">
+        <div class="container">
+            <div class="menu-categories">
+                <a href="#breakfast" class="menu-category active">Breakfast</a>
+                <a href="#main-dishes" class="menu-category">Main Dishes</a>
+                <a href="#snacks" class="menu-category">Snacks</a>
+                <a href="#beverages" class="menu-category">Beverages</a>
+                <a href="#specials" class="menu-category">Specials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breakfast Menu Section -->
+    <section class="menu-section" id="breakfast">
+        <div class="container">
+            <div class="section-header">
+                <h2>Breakfast</h2>
+                <p>Start your day the Ugandan way</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/rolex.jpg" alt="Ugandan Rolex">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">The Original Rolex <span class="item-price">UGX 5,000</span></h3>
+                        <p class="item-description">Chapati rolled with eggs, tomatoes, onions, and cabbage. Choice of beef, chicken, or pork.</p>
+                        <div class="item-options">
+                            <span class="veg-option"><i class="fas fa-leaf"></i> Vegetarian option available</span>
+                            <span class="spicy-option"><i class="fas fa-pepper-hot"></i> Add spice +UGX 500</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/kikomando.jpg" alt="Kikomando">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Kikomando <span class="item-price">UGX 4,000</span></h3>
+                        <p class="item-description">Chapati chopped and mixed with beans. Served with fresh avocado when in season.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/katogo.jpg" alt="Katogo">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Katogo <span class="item-price">UGX 6,000</span></h3>
+                        <p class="item-description">Traditional banana stew with beef or goat meat, served with matooke or potatoes.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/porridge.jpeg" alt="Porridge">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Local Porridge <span class="item-price">UGX 3,000</span></h3>
+                        <p class="item-description">Millet or maize flour porridge served with mandazi or sweet potatoes.</p>
+                        <div class="item-options">
+                            <span class="option"><i class="fas fa-glass-whiskey"></i> Available in millet or maize</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Dishes Section -->
+    <section class="menu-section" id="main-dishes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Main Dishes</h2>
+                <p>Hearty meals for lunch and dinner</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/rice-beans.jpeg" alt="Rice and Beans">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Rice & Beans <span class="item-price">UGX 7,000</span></h3>
+                        <p class="item-description">Steamed rice with slow-cooked beans, served with vegetable sauce.</p>
+                        <div class="item-options">
+                            <span class="option"><i class="fas fa-utensils"></i> Add meat +UGX 3,000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/matooke.jpg" alt="Matooke">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Matooke Combo <span class="item-price">UGX 8,000</span></h3>
+                        <p class="item-description">Steamed green bananas with groundnut sauce, beans, and meat of your choice.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/luwombo.jpeg" alt="Luwombo">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Luwombo <span class="item-price">UGX 10,000</span></h3>
+                        <p class="item-description">Traditional steamed dish with chicken, beef or fish cooked in banana leaves.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/posho-beans.jpg" alt="Posho and Beans">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Posho & Beans <span class="item-price">UGX 5,000</span></h3>
+                        <p class="item-description">Maize meal served with beans and greens. Add meat for extra protein.</p>
+                        <div class="item-options">
+                            <span class="option"><i class="fas fa-utensils"></i> Add meat +UGX 3,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Snacks Section -->
+    <section class="menu-section" id="snacks">
+        <div class="container">
+            <div class="section-header">
+                <h2>Snacks</h2>
+                <p>Quick bites and street food favorites</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/egg-roll.jpg" alt="Egg Roll">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Egg Roll <span class="item-price">UGX 3,000</span></h3>
+                        <p class="item-description">Deep-fried dough wrapped around a boiled egg - perfect quick snack.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/mandazi.jpg" alt="Mandazi">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Mandazi <span class="item-price">UGX 1,000</span></h3>
+                        <p class="item-description">Sweet fried dough pieces, perfect with tea or coffee (3 pieces).</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/samosas.jpg" alt="Samosa">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Samosas <span class="item-price">UGX 2,000</span></h3>
+                        <p class="item-description">Crispy pastry filled with minced meat or vegetables (2 pieces).</p>
+                        <div class="item-options">
+                            <span class="veg-option"><i class="fas fa-leaf"></i> Veg option available</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/chapati.jpg" alt="Chapati">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Fresh Chapati <span class="item-price">UGX 2,000</span></h3>
+                        <p class="item-description">Soft, flaky flatbread made fresh throughout the day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beverages Section -->
+    <section class="menu-section" id="beverages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Beverages</h2>
+                <p>Hot and cold drinks to quench your thirst</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/tea.jpg" alt="African Tea">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">African Tea <span class="item-price">UGX 2,000</span></h3>
+                        <p class="item-description">Spiced milk tea with ginger - our specialty!</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/coffee.jpg" alt="Coffee">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Local Coffee <span class="item-price">UGX 3,000</span></h3>
+                        <p class="item-description">Freshly brewed from Rwenzori mountains beans.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/juice.jpg" alt="Fresh Juice">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Fresh Juice <span class="item-price">UGX 4,000</span></h3>
+                        <p class="item-description">Seasonal fruits: passion, mango, pineapple or avocado.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/dishes/soda.jpg" alt="Soda">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Soft Drinks <span class="item-price">UGX 2,500</span></h3>
+                        <p class="item-description">Coca-Cola, Fanta, Sprite, Mountain Dew.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials Section -->
+    <section class="menu-section" id="specials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Daily Specials</h2>
+                <p>Ask about today's special offerings</p>
+            </div>
+            
+            <div class="specials-grid">
+                <div class="special-card">
+                    <div class="special-badge">Monday</div>
+                    <div class="special-content">
+                        <h3>Matooke & Beef Stew</h3>
+                        <p>Steamed bananas with tender beef stew and vegetables</p>
+                        <span class="special-price">UGX 9,000</span>
+                    </div>
+                </div>
+                
+                <div class="special-card">
+                    <div class="special-badge">Tuesday</div>
+                    <div class="special-content">
+                        <h3>Fish & Chips</h3>
+                        <p>Fresh tilapia with fried potatoes and kachumbari</p>
+                        <span class="special-price">UGX 12,000</span>
+                    </div>
+                </div>
+                
+                <div class="special-card">
+                    <div class="special-badge">Wednesday</div>
+                    <div class="special-content">
+                        <h3>Chicken Luwombo</h3>
+                        <p>Traditional steamed chicken in banana leaves</p>
+                        <span class="special-price">UGX 10,000</span>
+                    </div>
+                </div>
+                
+                <div class="special-card">
+                    <div class="special-badge">Thursday</div>
+                    <div class="special-content">
+                        <h3>Goat Meat Stew</h3>
+                        <p>Tender goat meat with rice or posho</p>
+                        <span class="special-price">UGX 11,000</span>
+                    </div>
+                </div>
+                
+                <div class="special-card">
+                    <div class="special-badge">Friday</div>
+                    <div class="special-content">
+                        <h3>Rolex Platter</h3>
+                        <p>2 large Rolexes with extra fillings + soda</p>
+                        <span class="special-price">UGX 12,000</span>
+                    </div>
+                </div>
+                
+                <div class="special-card">
+                    <div class="special-badge">Weekend</div>
+                    <div class="special-content">
+                        <h3>BBQ Special</h3>
+                        <p>Mixed grill with chicken, beef and pork</p>
+                        <span class="special-price">UGX 15,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="menu-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 style="background-color: purple; font-weight: bold; text-align: center; color: white;">Hungry Yet?</h2>
+                <hr>
+                <p style="text-align: center;">-----Visit us today or book your table in advance-----</p>
+                <div class="cta-buttons">
+                    <a href="tel:+256741782179" style="color: green; align-items: center;" class="btn-call">
+                        <i class="fas fa-phone"></i> Call to Order
+                    </a>
+                    <a href="booking.html"  class="btn-primary">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img style="border-radius: 200px 200px ; width: 50px;" src="images/logos/logo.png" alt="Onesmus Restaurant Logo" class="footer-logo">
+                    <p>Authentic Ugandan street food served with love in Nsikye, Nyamitanga, Mbarara since 2013.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="tel:+256741782179"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="booking.html">Book Table</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Nsikye, Nyamitanga, Mbarara</li>
+                        <li><i class="fas fa-phone"></i> +256741782179</li>
+                        <li><i class="fas fa-envelope"></i> info@onesmusrestaurant.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 6:30 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Onesmus Restaurant. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="login.html">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

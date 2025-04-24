@@ -1,0 +1,248 @@
+/* ===== GALLERY PAGE STYLES ===== */
+.gallery-navigation {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+}
+
+.gallery-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.gallery-filter {
+    padding: 0.6rem 1.5rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    color: #2c3e50;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-filter:hover,
+.gallery-filter.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.main-gallery {
+    padding: 3rem 0 5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-text {
+    text-align: center;
+    color: #fff;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-text {
+    transform: translateY(0);
+}
+
+.gallery-text h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.gallery-text p {
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.gallery-text i {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.gallery-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gallery-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+/* Video Section */
+.video-section {
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+}
+
+.video-caption {
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+.video-caption h3 {
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.video-caption p {
+    color: var(--text-light);
+}
+
+/* Instagram Section */
+.instagram-section {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.instagram-section h2 {
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.instagram-section p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.instagram-follow {
+    display: inline-block;
+    background-color: #e1306c;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.instagram-follow:hover {
+    background-color: #c13584;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+}
+
+.instagram-follow i {
+    margin-right: 0.5rem;
+}
+
+.instagram-feed {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.instagram-placeholder {
+    background-color: #f5f7fa;
+    padding: 3rem;
+    border-radius: 10px;
+    color: var(--text-light);
+}
+
+/* Lightbox Overrides */
+.lightbox .lb-image {
+    border: 5px solid #fff;
+    border-radius: 3px;
+}
+
+.lightbox .lb-nav a.lb-prev,
+.lightbox .lb-nav a.lb-next {
+    opacity: 1;
+}
+
+.lightbox .lb-close {
+    opacity: 1;
+}
+
+/* Responsive Gallery */
+@media (max-width: 992px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-categories {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .gallery-filter {
+        white-space: nowrap;
+    }
+    
+    .video-caption {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+    
+    .instagram-placeholder {
+        padding: 2rem 1rem;
+    }
+}
+

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Onesmus Restaurant | Food Photos & Restaurant Atmosphere</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logos/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="View mouthwatering photos of our Rolex, Kikomando, Egg Rolls and other Ugandan dishes at Onesmus Restaurant in Nyamitanga, Mbarara.">
+    <meta name="keywords" content="Onesmus Restaurant photos, Ugandan food images, Rolex pictures, Mbarara restaurant gallery">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img style="border-radius: 200px 200px ; width: 50px;" src="images/logos/logo.png" alt="Onesmus Restaurant Logo">
+                </a>
+                
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="booking.html">Book Table</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/background/gallery-bg.jpg'); height: 600px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Our Gallery</h1>
+                <p class="hero-subtitle">A visual feast of our food, restaurant, and happy customers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Navigation -->
+    <section class="gallery-navigation">
+        <div class="container">
+            <div class="gallery-categories">
+                <button class="gallery-filter active" data-filter="all">All Photos</button>
+                <button class="gallery-filter" data-filter="food">Food</button>
+                <button class="gallery-filter" data-filter="restaurant">Restaurant</button>
+                <button class="gallery-filter" data-filter="events">Events</button>
+                <button class="gallery-filter" data-filter="customers">Happy Customers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery Section -->
+    <section class="main-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Food Category -->
+                <div class="gallery-item food">
+                    <a href="images/dishes/rolex.jpg" data-lightbox="gallery" data-title="Our Famous Rolex">
+                        <img src="images/dishes/rolex.jpg" alt="Ugandan Rolex">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Rolex</h3>
+                                <p>Our signature dish</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item food">
+                    <a href="images/dishes/kikomando.jpg" data-lightbox="gallery" data-title="Kikomando - Local Favorite">
+                        <img src="images/dishes/kikomando.jpg" alt="Kikomando">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Kikomando</h3>
+                                <p>Chapati with beans</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Restaurant Category -->
+                <div class="gallery-item restaurant">
+                    <a href="images/booking/indoor-dining.jpg" data-lightbox="gallery" data-title="Our Cozy Dining Area">
+                        <img src="images/booking/indoor-dining.jpg" alt="Restaurant Interior">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Dining Area</h3>
+                                <p>Comfortable seating</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Events Category -->
+                <div class="gallery-item events">
+                    <a href="images/staff/Mr.-Juuko.jpg" data-lightbox="gallery" data-title="Live Cooking Demonstration">
+                        <img src="images/staff/Mr.-Juuko.jpg" alt="Cooking Demo">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Cooking Demo</h3>
+                                <p>Weekly events</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item events">
+                    <a href="images/staff/Mr.-Juuko.jpg" data-lightbox="gallery" data-title="Live Cooking Demonstration">
+                        <img src="images/staff/Mr.-Juuko.jpg" alt="Cooking Demo">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Cooking Demo</h3>
+                                <p>Weekly events</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Customers Category -->
+                <div class="gallery-item customers">
+                    <a href="images/staff/Mr.-Blaise.png" data-lightbox="gallery" data-title="Happy Customer Enjoying Rolex">
+                        <img src="images/staff/Mr.-Blaise.png" alt="Happy Customer">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Happy Customer</h3>
+                                <p>Enjoying our Rolex</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item customers">
+                    <a href="images/staff/Mr.-Uthman.jpg" data-lightbox="gallery" data-title="Happy Customer Enjoying Rolex">
+                        <img src="images/staff/Mr.-Uthman.jpg" alt="Happy Customer">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Happy Customer</h3>
+                                <p>Enjoying our Rolex</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Food Category -->
+                <div class="gallery-item food">
+                    <a href="images/staff/category-3-150x150.jpeg" data-lightbox="gallery" data-title="Fresh Egg Rolls">
+                        <img src="images/staff/category-3-150x150.jpeg" alt="Egg Rolls">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Egg Rolls</h3>
+                                <p>Perfect snack</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item food">
+                    <a href="images/staff/category-3-150x150.jpeg" data-lightbox="gallery" data-title="Fresh Egg Rolls">
+                        <img src="images/staff/category-3-150x150.jpeg" alt="Egg Rolls">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Egg Rolls</h3>
+                                <p>Perfect snack</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Restaurant Category -->
+                <div class="gallery-item restaurant">
+                    <a href="images/booking/indoor-dining.jpg" data-lightbox="gallery" data-title="Our Outdoor Seating">
+                        <img src="images/booking/indoor-dining.jpg" alt="Outdoor Seating">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Outdoor Area</h3>
+                                <p>Enjoy the weather</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Events Category -->
+                <div class="gallery-item events">
+                    <a href="images/staff/Mr.-Juuko.jpg" data-lightbox="gallery" data-title="Friday Night Live Music">
+                        <img src="images/staff/Mr.-Juuko.jpg" alt="Live Music">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Live Music</h3>
+                                <p>Friday nights</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Food Category -->
+                <div class="gallery-item food">
+                    <a href="images/gallery/katogo1.jp" data-lightbox="gallery" data-title="Traditional Katogo">
+                        <img src="images/gallery/katogo1-thumb.jg" alt="Katogo">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Katogo</h3>
+                                <p>Banana stew</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Customers Category -->
+                <div class="gallery-item customers">
+                    <a href="images/gallery/custome.jpg" data-lightbox="gallery" data-title="Family Enjoying Meal">
+                        <img src="images/gallery/customer2-thumb.jp" alt="Family Meal">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Family Meal</h3>
+                                <p>Sharing is caring</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Food Category -->
+                <div class="gallery-item food">
+                    <a href="images/gallery/mandazi1.jpg" data-lightbox="gallery" data-title="Fresh Mandazi">
+                        <img src="images/gallery/mandazi1-thumb.jpg" alt="Mandazi">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Mandazi</h3>
+                                <p>With African tea</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Restaurant Category -->
+                <div class="gallery-item restaurant">
+                    <a href="images/gallery/kitchen1jpg" data-lightbox="gallery" data-title="Our Clean Kitchen">
+                        <img src="images/gallery/kitchen1-thumb.jp" alt="Restaurant Kitchen">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3>Our Kitchen</h3>
+                                <p>Always clean</p>
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="gallery-cta">
+                <p>See these delicious dishes in person!</p>
+                <a href="booking.html" class="btn-primary">Book Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>See Us in Action</h2>
+                <p>Watch how we prepare our famous dishes</p>
+            </div>
+            
+            <div class="video-container">
+                <video controls poster="images/dishes/rice-beans.jpeg">
+                    <source src="videos/cooking.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-caption">
+                    <h3>Making the Perfect Rolex</h3>
+                    <p>Watch Onesmus demonstrate his technique for rolling the perfect Rolex</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="instagram-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Follow Us on Instagram</h2>
+                <p>@OnesmusRestaurant</p>
+                <a href="https://www.instagram.com/onesmusrestaurant" target="_blank" class="instagram-follow">
+                    <i class="fab fa-instagram"></i> Follow Us
+                </a>
+            </div>
+            
+            <div class="instagram-feed">
+                <!-- Instagram images would be loaded via JS, but placeholder for structure -->
+                <div class="instagram-placeholder">
+                    <p>Instagram feed would appear here</p>
+                    <p>(Connected via Instagram API in production)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img style="border-radius: 200px 200px ; width: 50px;" src="images/logos/logo.png" alt="Onesmus Restaurant Logo" class="footer-logo">
+                    <p>Authentic Ugandan street food served with love in Nsikye, Nyamitanga, Mbarara since 2013.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="booking.html">Book Table</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Nsikye, Nyamitanga, Mbarara</li>
+                        <li><i class="fas fa-phone"></i> +256 700 000000</li>
+                        <li><i class="fas fa-envelope"></i> info@onesmusrestaurant.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 6:30 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Onesmus Restaurant. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="login.html">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
